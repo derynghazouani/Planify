@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="paiement.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Paiement</title>
+    <link rel="stylesheet" href="paiement.css">
+</head>
+<body>
+    <div class="container">
+        <form action="paiement.php" method="post" id="paymentForm">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="input-box">
+                        <span>Nom Complet :</span>
+                        <input type="text" placeholder="Malek Bahroun" id="fullName" name="fullname">
+                    </div>
+                    <div class="input-box">
+                        <span>Email :</span>
+                        <input type="email" placeholder="exemple@exemple.com" id="email" name="email">
+                    </div>
+                    <div class="input-box">
+                        <span>Address :</span>
+                        <input type="text" placeholder="Rue - quartier " name="address">
+                    </div>
+                    <div class="input-box">
+                        <span>Cité :</span>
+                        <input type="text" placeholder="El Nasser" name="cite">
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Gouvernorat :</span>
+                            <input type="text" placeholder="Tunis" name="gouv">
+                        </div>
+                        <div class="input-box">
+                            <span>Code Postal:</span>
+                            <input type="number" placeholder="1230" name="codep">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="column">
+                    <h3 class="title">Paiement</h3>
+                    <div class="input-box">
+                        <span>Les cartes acceptées :</span>
+                       
+                        <div >
+                            
+                            <img src="card22.png" alt="img">
+                            <img src="master.png" alt="img">
+                            
+                            
+                            
+                            <img src="masterpetit.ico" alt="img">
+                            <img src="mastergold.ico" alt="img">
+                            <img src="american.ico" alt="img">
+                            <img src="visa.ico" alt="img">
+
+
+                         
+
+
+                        </div>
+                        
+                    </div>
+                    <div class="input-box">
+                        <span>Nom du titulaire de la carte :</span>
+                        <input type="text" placeholder="Tesnim Baoub" name="nomtut">
+                        
+                    </div>
+                    <div class="input-box">
+                        <span>Numero de la carte :</span>
+                        <input type="number" placeholder="1111 2222 3333 4444" id="cardNumber" name="numcarte">
+                    </div>
+                    <div class="input-box">
+                        <span>Mois d'expiration :</span>
+                        <input type="text" placeholder="Janvier" name="moisdexp">
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Année d'expiration:</span>
+                            <input type="number" placeholder="2025" name="anneedexp">
+                        </div>
+                        <div class="input-box">
+                            <span>CVV :</span>
+                            <input type="number" placeholder="123" name="cvv">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <button type="submit" class="btn">Soumettre</button>
+        </form>
+    </div>
+    
+</body>
+</html>

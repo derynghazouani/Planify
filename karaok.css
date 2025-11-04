@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(255, 246, 236);
+
+}
+video {
+    width: 100vw;           /* Full screen width */
+    height: 60vh;           /* 30% of screen height — adjust as needed */
+    object-fit: cover;      /* Crops and centers video nicely */
+    display: block;
+  }
+img{
+    margin-right: 10px;
+   margin-top: 20px;
+    float: left;
+    width: 300px;
+    height: 300px;
+   border-radius: 5px;
+  
+}
+p{
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    border-radius: 5px;
+    
+}
+fieldset {
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+ margin: 10px;
+    background-color: rgb(255, 246, 236);
+
+}
+.btn:hover{
+    background-color:#7D5E2A ;
+    
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    border: 0;
+    background-color: beige;
+   
+ }
+ ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+}
+li{
+    padding-top: 5px;}
+    .star {
+        color: #999; /* gris clair par défaut */
+        margin-right: 8px;
+        font-size: 1.8rem;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
+    
+   

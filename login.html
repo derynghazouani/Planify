@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="login.php"  method="post"   onsubmit="return valider(event)">
+        <h1>Connexion</h1>
+        <div class="input-box">
+          <input type="text" placeholder="email" name="email" required />
+          <span class="error-message"></span>
+         
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Mot de passe"
+            name="password"
+            required
+          />
+          <span class="error-message"></span>
+   
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="remember-forgot" style="margin-top:40px">
+          <label><input type="checkbox" />Se souvenir de moi</label>
+          <a href="#">Mot de passe oublié</a>
+        </div>
+
+        <button type="submit" class="btn" style="margin-top:5px;margin-bottom:-10px">
+          Se connecter
+          
+        </button>
+        <div class="register-link"style="margin-top:40px">
+          <p>Pas de compte?<a href="#">Créer un compte</a></p>
+        </div>
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

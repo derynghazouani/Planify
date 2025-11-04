@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Créer un compte d'organisateur d'événements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="formorganisateur.css" />
+  </head>
+  <body class="bg-gray-100 py-8 px-4">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <h2
+        class="text-2xl font-semibold text-center mb-6"
+        style="color: #14281d"
+      >
+        Créer un compte d'organisateur
+      </h2>
+
+      <form action="" onsubmit="return valider(event)">
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label
+              for="fullName"
+              class="block text-sm font-medium text-gray-700"
+              >Nom complet</label
+            >
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+              required
+            />
+          </div>
+          <div>
+            <label for="dob" class="block text-sm font-medium text-gray-700"
+              >Date de naissance</label
+            >
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="gender" class="block text-sm font-medium text-gray-700"
+              >Sexe</label
+            >
+            <select
+              id="gender"
+              name="gender"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+              required
+            >
+              <option value="male">Homme</option>
+              <option value="female">Femme</option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700"
+              >Numéro de téléphone</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium text-gray-700"
+            >Adresse e-mail</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+            required
+          />
+        </div>
+
+        
+        <div class="mb-6">
+          <label for="orgName" class="block text-sm font-medium text-gray-700"
+            >Nom de l'organisation</label
+          >
+          <input
+            type="text"
+            id="orgName"
+            name="orgName"
+            class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+            required
+          />
+        </div>
+
+        <div class="mb-6">
+          <label
+            for="orgAddress"
+            class="block text-sm font-medium text-gray-700"
+            >Adresse de l'organisation</label
+          >
+          <input
+            type="text"
+            id="orgAddress"
+            name="orgAddress"
+            class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+            required
+          />
+        </div>
+
+        <div class="mb-6">
+          <label
+            for="bankAccountNumber"
+            class="block text-sm font-medium text-gray-700"
+            >Numéro de compte bancaire</label
+          >
+          <input
+            type="text"
+            id="bankAccountNumber"
+            name="bankAccountNumber"
+            class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+            required
+          />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label
+              for="username"
+              class="block text-sm font-medium text-gray-700"
+              >Nom d'utilisateur</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block text-sm font-medium text-gray-700"
+              >Mot de passe</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label
+            for="confirmPassword"
+            class="block text-sm font-medium text-gray-700"
+            >Confirmer le mot de passe</label
+          >
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            class="w-full mt-1 p-3 border border-gray-300 rounded-md"
+            required
+          />
+        </div>
+
+        <div class="mb-6">
+          <label for="terms" class="flex items-center">
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              class="h-5 w-5 text-blue-600 border-gray-300 rounded"
+              required
+            />
+            <span class="ml-2 text-sm text-gray-700">
+              J'accepte les
+              <a href="#" style="color: #FAA002" class="hover:underline">
+                conditions générales
+              </a>
+
+              et la politique de confidentialité
+            </span>
+          </label>
+        </div>
+
+        <div class="text-center">
+         
+          <button
+            type="submit"
+            class="text-white py-3 px-6 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+            style="background-color: #FAA002; color: #fff"
+          >
+            Créer un compte
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="formorganisateur.js"></script>
+  </body>
+</html>
